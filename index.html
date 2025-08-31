@@ -219,7 +219,7 @@
 
       const rows = fields.map(field => {
         const value = entry[field] && entry[field].trim() !== "" ? entry[field] : "—";
-        const extraClass = (field === "Kostenträger" || field === "Tarif") ? "highlight" : "";
+          const extraClass = (field === "Kostenträger-Nr." || field === "Tarif") ? "highlight" : "";
         return `
           <div class="row">
             <div class="label">${field}</div>
